@@ -1,0 +1,29 @@
+{
+  "name": "egf-ccc-empty",
+  "version": "1.0.0",
+  "description": "An empty project of Cocoscreator2.x based on EasyGameFramework",
+  "main": "index.js",
+  "dependencies": {
+    "@ailhc/egf-core": "^0.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AILHC/egf-ccc-empty.git"
+  },
+  "keywords": [
+    "cocos",
+    "creator",
+    "framework",
+    "easy"
+  ],
+  "author": "AILHC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AILHC/egf-ccc-empty/issues"
+  },
+  "homepage": "https://github.com/AILHC/egf-ccc-empty#readme"
+}
