@@ -1,9 +1,9 @@
 declare global {
     interface IModuleMap {
-        helloWorld: HeroWorld
+        helloWorld: HelloWorld
     }
 }
-export class HeroWorld implements egf.IModule {
+export class HelloWorld implements egf.IModule {
     key: string = "helloWorld";
     say(str?: string) {
         console.log(`hello ${str ? str : "world"}`);
