@@ -1,5 +1,5 @@
 # egf-ccc-empty
-    基于EasyGameFramework核心模块`egf-core`(模块管理器)的CocosCreator2.x的空项目
+基于EasyGameFramework核心模块`egf-core`(模块管理器)的CocosCreator2.x的空项目
 
 ## 简介
 可以通过 install 框架的npm包，或者通过typescript以添加模块扩展框架
@@ -94,20 +94,22 @@ export class AppMainComp extends Component {
 ```
 >PS: 这里的时机就比较靠后了，依赖节点，注意这个组件实例会被切换场景后清掉。
 
-3. 每个文件的作用说明
-    a. AppMain.ts/AppMainComp.ts
+## 每个文件的作用说明
 
-        框架初始化用的
-    b. ModuleMap.ts
+1. AppMain.ts/AppMainComp.ts
 
-        这是一个安全的全局引用依赖点 ，而且只需要将m这个变量挂载到window下就可以方便调试了
-        IModuleMap 这是全局模块接口声明
-        
-        这些都是可以自定义和框架无关。
-        没有它你也可以通过 获取app来获取和调用模块
-    c. FrameworkLoader.ts
+    框架初始化用的
+2. ModuleMap.ts
 
-        这个的作用是进行模块加载，隔离模块加载的细节，可以通过替换来达到不同环境加载不同模块或者给予相同模块不同的初始化参数等等
-    d. HelloWorld.ts
+    这是一个安全的全局引用依赖点 ，而且只需要将m这个变量挂载到window下就可以方便调试了
+    IModuleMap 这是全局模块接口声明
+    
+    这些都是可以自定义和框架无关。
+    没有它你也可以通过 获取app来获取和调用模块
+3. FrameworkLoader.ts
 
-        扩展模块
+    这个的作用是进行模块加载，隔离模块加载的细节，可以通过替换来达到不同环境加载不同模块或者给予相同模块不同的初始化参数等等
+4. HelloWorld.ts
+
+    扩展模块
+
