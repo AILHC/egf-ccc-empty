@@ -1,5 +1,5 @@
 # egf-ccc-empty
-    基于EasyGameFramework的CocosCreator2.x的空项目
+    基于EasyGameFramework核心模块`egf-core`(模块管理器)的CocosCreator2.x的空项目
 
 ## 简介
 可以通过 install 框架的npm包，或者通过typescript以添加模块扩展框架

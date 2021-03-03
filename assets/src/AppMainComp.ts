@@ -11,9 +11,7 @@ const { ccclass, property } = cc._decorator;
 import { App } from "@ailhc/egf-core"
 import { FrameworkLoader } from "./boot-loaders/FrameworkLoader";
 import { setModuleMap, m } from "./ModuleMap";
-declare global {
 
-}
 @ccclass
 export default class AppMain extends cc.Component {
 
@@ -25,6 +23,7 @@ export default class AppMain extends cc.Component {
     private _initFramework() {
         const app = new App<IModuleMap>();
         app.bootstrap([new FrameworkLoader()]);
+        //将模块字典赋值给全局安全变量 m 见 ModuleMap.ts
         setModuleMap(app.moduleMap);
         app.init();
         window["m"] = m;//挂在到全局，方便控制台调试，生产环境可以屏蔽=>安全

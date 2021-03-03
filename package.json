@@ -4,7 +4,7 @@
   "description": "An empty project of Cocoscreator2.x based on EasyGameFramework",
   "main": "index.js",
   "dependencies": {
-    "@ailhc/egf-core": "^0.1.4"
+    "@ailhc/egf-core": "^1.1.3"
   },
   "devDependencies": {},
   "scripts": {
